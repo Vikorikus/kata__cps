@@ -129,6 +129,9 @@ h1 {
   align-self: center;
   line-height: 0;
   margin-right: 16px;
+  width: 4px;
+  height: 40px;
+  background-image: url("images/highlight.svg");
 }
 
 .main-title__text {
@@ -220,6 +223,10 @@ h1 {
   cursor: pointer;
   display: inline-flex;
   align-items: center;
+  background-image: url("images/expand.svg");
+  width: 7.41px; /* Укажи размер иконки */
+  height: 10.29px;
+  white-space: nowrap;
 }
 
 .maininfo__next-text {
