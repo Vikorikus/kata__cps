@@ -126,7 +126,6 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* margin-top: 24px; */
 }
 
 .main-title__highlight {
@@ -145,11 +144,11 @@ h1 {
 }
 
 .main-title__buttons {
-  min-width: 274px;
+  min-width: 234px;
   display: flex;
   justify-content: space-between;
   white-space: nowrap;
-  margin-left: 450px;
+  margin-left: 530px;
 }
 
 .button__text {
