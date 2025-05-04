@@ -51,6 +51,7 @@ body {
   min-width: 320px;
   overflow-x: hidden;
   max-width: 1120px;
+  margin: 0 auto;
 }
 
 h1 {
@@ -60,6 +61,7 @@ h1 {
 
 .content {
   background-color: #f8f8f8;
+  width: 100%;
 }
 
 .header {
@@ -227,21 +229,21 @@ h1 {
 }
 
 .maininfo__next-button {
-  text-decoration: none;
-  background: none;
-  font: inherit;
-  cursor: pointer;
   display: flex;
   align-items: center;
-  background-image: url("images/expand.svg");
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 8px 0;
+  width: auto;
+}
+.maininfo__next-img {
   width: 24px;
   height: 24px;
-  white-space: nowrap;
-  border: none;
 }
-
 .maininfo__next-text {
-  padding-left: 32px;
+  padding-left: 8px;
   color: #1b1c21;
   font-weight: 500;
   font-size: 16px;
