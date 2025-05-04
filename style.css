@@ -190,7 +190,7 @@ h1 {
 
 .slidemenu__link {
   text-decoration: none;
-  display: block; /* Делаем ссылку блочной для корректного padding */
+  display: block;
   color: inherit;
   border: 2px solid transparent;
   padding: 0.5rem;
