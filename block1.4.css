@@ -56,8 +56,8 @@ body {
 }
 
 .content {
-  width: 100%;
-  min-height: 100vh
+max-height: 1024px;
+overflow-y: hidden;
 }
 
 .header {
@@ -137,7 +137,7 @@ left: 0
   position: fixed;
   justify-content: space-between;
   height: 100vh;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 
 .slidemenu__options {
@@ -184,7 +184,7 @@ left: 0
   display: flex;
   flex-direction: column;
   margin-left: 24px;
-  margin-bottom: 35vh;
+  margin-bottom: 30vh;
 
 
 
