@@ -14,7 +14,13 @@
           <!-- левая часть шапки -->
           <div class="header__nav-left">
             <!-- меню бургер -->
-            <button class="round-icon round-icon--burger"></button>
+            <button class="button button--burger">
+              <img
+                src="images/burger.svg"
+                alt="Открыть меню"
+                class="button__burger-icon"
+              />
+            </button>
             <!-- палка-разделитель левая -->
             <div
               class="header__divider header__divider--left"
@@ -33,35 +39,73 @@
           <!-- правая часть шапки -->
           <div class="header__nav-right">
             <!-- кнопка позвонить -->
-            <button class="round-icon round-icon--call"></button>
-            <!-- кнопка сообщение -->
-            <button class="round-icon round-icon--chat"></button>
-            <!-- кнопка профиль -->
-            <button class="round-icon round-icon--profile"></button>
+            <button class="button button--call">
+              <img src="images/call.svg" alt="Позвонить" class="button__icon" />
+            </button>
+            <!-- кнопка "Сообщение" -->
+            <button class="button button--chat">
+              <img
+                src="images/chat.svg"
+                alt="Отправить сообщение"
+                class="button__icon"
+              />
+            </button>
+            <!-- кнопка "Профиль" -->
+            <button class="button button--profile">
+              <img
+                src="images/profile.svg"
+                alt="Мой профиль"
+                class="button__icon"
+              />
+            </button>
             <!-- палка-разделитель правая -->
             <div
               class="header__divider header__divider--right"
               aria-hidden="true"
             ></div>
-            <!-- кнопка заявка -->
-            <button class="round-icon round-icon--repair"></button>
-            <!-- кнопка узнать статус -->
-            <button class="round-icon round-icon--checkstatus"></button>
+            <!-- кнопка "Заявка" -->
+            <button class="button button--repair">
+              <img
+                src="images/repair.svg"
+                alt="Оставить заявку"
+                class="button__icon"
+              />
+            </button>
+            <!-- кнопка "Узнать статус" -->
+            <button class="button button--checkstatus">
+              <img
+                src="images/checkstatus.svg"
+                alt="Узнать статус ремонта"
+                class="button__icon"
+              />
+            </button>
           </div>
         </nav>
       </header>
       <main class="main">
         <div class="main-title">
           <div class="main-title__box">
-            <div class="main-title__highlight" aria-hidden="true"></div>
+            <div class="main-title__highlight" aria-hidden="true">
+              <img src="images/highlight.svg" alt="" />
+            </div>
             <h1 class="main-title__text">Услуги и сервисы</h1>
           </div>
           <div class="main-title__buttons">
-            <button class="round-icon round-icon--repair">
-              <span class="round-icon__text">Оставить заявку</span>
+            <button class="button button--repair">
+              <span class="button__text">Оставить заявку</span>
+              <img
+                src="images/repair.svg"
+                alt="Оставить заявку"
+                class="button__icon"
+              />
             </button>
-            <button class="round-icon round-icon--checkstatus">
-              <span class="round-icon__text">Статус ремонта</span>
+            <button class="button button--checkstatus">
+              <span class="button__text">Узнать статус ремонта</span>
+              <img
+                src="images/checkstatus.svg"
+                alt="Узнать статус"
+                class="button__icon"
+              />
             </button>
           </div>
         </div>
@@ -96,17 +140,28 @@
               <p class="maininfo__content-text">
                 Мы являемся авторизованным сервисным центром по ремонту техники
                 Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.<br /><br />Мы успешно
-                работаем с 1992 года и заслужили репутацию надежного партнера,
-                что подтверждает большое количество постоянных клиентов. Мы
-                гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                очередь, советуют нас родным и близким.
+                официальной гарантией производителя.
+                <span class="maininfo__content-text--more">
+                  <br />Мы успешно работаем с 1992 года и заслужили репутацию
+                  надежного партнера,</span
+                ><span class="maininfo__content-text--more2"
+                  >что подтверждает большое количество постоянных клиентов. Мы
+                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
+                  очередь, советуют нас родным и близким.</span
+                >
               </p>
-              <!-- кнопка читать далее -->
-              <button class="expand-button">
-                <span class="expand-button__icon" aria-hidden="true"></span>
-                <span class="expand-button-text">Читать далее</span>
-              </button>
+              <!-- кнопка "читать далее" внутри текстового блока -->
+              <div class="maininfo__next">
+                <a href="#" class="maininfo__next-link">
+                  <img
+                    src="images/expand.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="maininfo__next-img"
+                  />
+                  <span class="maininfo__next-text">Читать далее</span>
+                </a>
+              </div>
             </div>
             <div class="maininfo__image">
               <img
