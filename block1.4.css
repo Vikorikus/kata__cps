@@ -98,7 +98,7 @@ body {
 }
 
 .main-title__highlight {
-  /* position: absolute; */
+  position: absolute;
   left: 0;
   width: 4px;
   height: 40px;
