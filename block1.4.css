@@ -109,7 +109,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 86vh;
+  height: 79vh;
+  position: fixed;
+  top: 116px;
+  left: 0;
+  width: 320px;
+  z-index: 1;
 }
 
 .slidemenu__options {
