@@ -98,8 +98,9 @@ body {
 }
 
 .main-title__highlight {
-  position: absolute;
-  left: 0;
+  /* position: relative;
+  top: 0;
+  left: 0; */
   width: 4px;
   height: 40px;
   background-image: url("images/highlight.svg");
@@ -109,7 +110,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 79vh;
+  height: 78vh;
   position: fixed;
   top: 116px;
   left: 0;
@@ -147,6 +148,7 @@ body {
 }
 .slidemenu__link--main {
   color: #7e7e82;
+  margin-left: 20px;
 }
 
 .slidemenu__link:hover {
@@ -160,6 +162,8 @@ body {
   flex-direction: column;
   padding-left: 24px;
   margin-top: auto;
+  width: 196px;
+  height: 124px;
 }
 .slidemenu__bottom-buttons {
   display: flex;
