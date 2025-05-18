@@ -48,14 +48,6 @@ html {
 
 body {
   font-family: "TT Lakes", sans-serif;
-  min-width: 320px;
-  overflow-x: hidden;
-  max-width: auto;
-  margin: 0 auto;
-}
-
-.content {
-  width: 100%;
 }
 
 .header {
@@ -70,19 +62,9 @@ body {
 .round-icon {
   display: flex;
 }
-
-
 .header__logo {
-
+  display: ;
 }
-
-.header__divider {
-  width: 1px;
-  height: 32px;
-  background-color: #eaeaea;
-  align-self: center;
-}
-
 .round-icon {
   width: 40px;
   height: 40px;
@@ -94,10 +76,9 @@ body {
   align-items: center;
   justify-content: center;
 }
-
 .round-icon--burger {
   background-image: url("images/burgeropen.svg");
-margin-right: 16.73px;
+  margin-right: 16.73px;
 }
 .round-icon--call {
   background-image: url("images/call.svg");
@@ -116,14 +97,10 @@ margin-right: 16.73px;
   margin-left: 78.27px;
 }
 
-.main {
-  padding: 0;
-}
-
 .main-title__highlight {
-  line-height: 0;
-position: absolute;
-left: 0
+  /* position: relative;
+  top: 0;
+  left: 0; */
   width: 4px;
   height: 40px;
   background-image: url("images/highlight.svg");
@@ -131,12 +108,14 @@ left: 0
 
 .slidemenu {
   display: flex;
-  align-items: center;
   flex-direction: column;
+  justify-content: space-between;
+  height: 78vh;
   position: fixed;
+  top: 116px;
   left: 0;
-  justify-content: space-between
-  
+  width: 320px;
+  z-index: 1;
 }
 
 .slidemenu__options {
@@ -151,17 +130,13 @@ left: 0
   align-items: center;
   font-size: 16px;
   font-weight: 500;
-  border-radius: 5px;
-  border: 2px solid transparent;
   color: #ffffff;
   margin-bottom: 32px;
   position: relative;
-  
 }
 
 .slidemenu__link {
   text-decoration: none;
-  display: block; /* Делаем ссылку блочной для корректного padding */
   color: inherit;
   border: 2px solid transparent;
   margin-left: 24px;
@@ -172,7 +147,8 @@ left: 0
   letter-spacing: -0.2px;
 }
 .slidemenu__link--main {
-  color: #7E7E82;
+  color: #7e7e82;
+  margin-left: 20px;
 }
 
 .slidemenu__link:hover {
@@ -184,7 +160,10 @@ left: 0
 .slidemenu__bottom {
   display: flex;
   flex-direction: column;
-
+  padding-left: 24px;
+  margin-top: auto;
+  width: 196px;
+  height: 124px;
 }
 .slidemenu__bottom-buttons {
   display: flex;
@@ -228,9 +207,8 @@ left: 0
   color: #1b1c21;
 }
 .lang--active {
-  color: #7e7e82;
+  color: #7e7e85;
 }
-
 .round-icon:hover {
-  opacity: 0.7;
+  opacity: 0.6;
 }

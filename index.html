@@ -1,178 +1,49 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CPS</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="content">
-      <header class="header">
-        <nav class="header__nav">
-          <!-- левая часть шапки -->
-          <div class="header__nav-left">
-            <!-- меню бургер -->
-            <button class="button button--burger">
-              <img
-                src="images/burger.svg"
-                alt="Открыть меню"
-                class="button__burger-icon"
-              />
-            </button>
-            <!-- палка-разделитель левая -->
-            <div
-              class="header__divider header__divider--left"
-              aria-hidden="true"
-            ></div>
-            <!-- логотип -->
-            <div class="header__logo">
-              <a href="#" class="header__logo-link"
-                ><img
-                  src="images/logo.svg"
-                  alt="Логотип"
-                  class="header__logo-img"
-              /></a>
-            </div>
-          </div>
-          <!-- правая часть шапки -->
-          <div class="header__nav-right">
-            <!-- кнопка позвонить -->
-            <button class="button button--call">
-              <img src="images/call.svg" alt="Позвонить" class="button__icon" />
-            </button>
-            <!-- кнопка "Сообщение" -->
-            <button class="button button--chat">
-              <img
-                src="images/chat.svg"
-                alt="Отправить сообщение"
-                class="button__icon"
-              />
-            </button>
-            <!-- кнопка "Профиль" -->
-            <button class="button button--profile">
-              <img
-                src="images/profile.svg"
-                alt="Мой профиль"
-                class="button__icon"
-              />
-            </button>
-            <!-- палка-разделитель правая -->
-            <div
-              class="header__divider header__divider--right"
-              aria-hidden="true"
-            ></div>
-            <!-- кнопка "Заявка" -->
-            <button class="button button--repair">
-              <img
-                src="images/repair.svg"
-                alt="Оставить заявку"
-                class="button__icon"
-              />
-            </button>
-            <!-- кнопка "Узнать статус" -->
-            <button class="button button--checkstatus">
-              <img
-                src="images/checkstatus.svg"
-                alt="Узнать статус ремонта"
-                class="button__icon"
-              />
-            </button>
-          </div>
-        </nav>
-      </header>
-      <main class="main">
-        <div class="main-title">
-          <div class="main-title__box">
-            <div class="main-title__highlight" aria-hidden="true">
-              <img src="images/highlight.svg" alt="" />
-            </div>
-            <h1 class="main-title__text">Услуги и сервисы</h1>
-          </div>
-          <div class="main-title__buttons">
-            <button class="button button--repair">
-              <span class="button__text">Оставить заявку</span>
-              <img
-                src="images/repair.svg"
-                alt="Оставить заявку"
-                class="button__icon"
-              />
-            </button>
-            <button class="button button--checkstatus">
-              <span class="button__text">Узнать статус ремонта</span>
-              <img
-                src="images/checkstatus.svg"
-                alt="Узнать статус"
-                class="button__icon"
-              />
-            </button>
-          </div>
-        </div>
-        <nav class="slidemenu">
-          <ul class="slidemenu__options">
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Ремонтируемые бренды</a>
-            </li>
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Ремонтируемые устройства</a>
-            </li>
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Дополнительные услуги</a>
-            </li>
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Цены на услуги</a>
-            </li>
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Адреса сервисных центров</a>
-            </li>
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Специальные цены</a>
-            </li>
-            <li class="slidemenu__item">
-              <a href="#" class="slidemenu__link">Отзывы</a>
-            </li>
-          </ul>
-        </nav>
-        <section class="maininfo">
-          <div class="maininfo__container">
-            <div class="maininfo__content">
-              <p class="maininfo__content-text">
-                Мы являемся авторизованным сервисным центром по ремонту техники
-                Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с
-                официальной гарантией производителя.
-                <span class="maininfo__content-text--more">
-                  <br />Мы успешно работаем с 1992 года и заслужили репутацию
-                  надежного партнера,</span
-                ><span class="maininfo__content-text--more2"
-                  >что подтверждает большое количество постоянных клиентов. Мы
-                  гордимся тем, что к нам обращаются по рекомендациям и, в свою
-                  очередь, советуют нас родным и близким.</span
-                >
-              </p>
-              <!-- кнопка "читать далее" внутри текстового блока -->
-              <div class="maininfo__next">
-                <a href="#" class="maininfo__next-link">
-                  <img
-                    src="images/expand.svg"
-                    alt=""
-                    aria-hidden="true"
-                    class="maininfo__next-img"
-                  />
-                  <span class="maininfo__next-text">Читать далее</span>
-                </a>
-              </div>
-            </div>
-            <div class="maininfo__image">
-              <img
-                src="images/cpsshield.jpg"
-                alt="Фото логотипа CPS в офисе"
-                class="maininfo__image-pic"
-              />
-            </div>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
-</html>
+html { box-sizing: border-box; } *, *:after, *:before { box-sizing: inherit;
+margin: 0; padding: 0; } @font-face { font-family: "TT Lakes"; src:
+url(/fonts/TTLakes-Regular.woff) format("woff"),
+url(/fonts/TTLakes-Regular.woff2) format("woff2"); font-weight: 400; font-style:
+normal; font-display: swap; } @font-face { font-family: "TT Lakes"; src:
+url(/fonts/TTLakes-Medium.woff) format("woff"), url(/fonts/TTLakes-Medium.ttf)
+format("ttf"); font-weight: 500; font-style: normal; font-display: swap; }
+@font-face { font-family: "TT Lakes"; src: url(/fonts/TTLakes-Bold.woff)
+format("woff"), url(/fonts/TTLakes-Bold.ttf) format("ttf"); font-weight: 700;
+font-style: normal; font-display: swap; } @font-face { font-family: "TT Lakes";
+src: url(/fonts/TTLakes-Light.woff) format("woff"),
+url(/fonts/TTLakes-Light.ttf) format("ttf"); font-weight: 300; font-style:
+normal; font-display: swap; } body { font-family: "TT Lakes", sans-serif; }
+.header { background-color: #ffffff; display: flex; } .header__nav { display:
+flex; align-items: center; margin: 18.73px 78.27px 46.27px 16.73px; }
+.round-icon { display: flex; } .header__logo { display: ; } .round-icon { width:
+40px; height: 40px; background: none; border: none; cursor: pointer;
+border-radius: 50%; display: flex; align-items: center; justify-content: center;
+} .round-icon--burger { background-image: url("images/burgeropen.svg");
+margin-right: 16.73px; } .round-icon--call { background-image:
+url("images/call.svg"); } .round-icon--chat { background-image:
+url("images/chat.svg"); } .round-icon--profile { background-image:
+url("images/profile.svg"); } .round-icon--repair { background-image:
+url("images/repair.svg"); } .round-icon--checkstatus { background-image:
+url("images/search320px.svg"); margin-left: 78.27px; } .main-title__highlight {
+/* position: relative; top: 0; left: 0; */ width: 4px; height: 40px;
+background-image: url("images/highlight.svg"); } .slidemenu { display: flex;
+flex-direction: column; justify-content: space-between; height: 78vh; position:
+fixed; top: 116px; left: 0; width: 320px; z-index: 1; } .slidemenu__options {
+list-style: none; display: flex; flex-direction: column; align-items: start; }
+.slidemenu__item { display: flex; align-items: center; font-size: 16px;
+font-weight: 500; color: #ffffff; margin-bottom: 32px; position: relative; }
+.slidemenu__link { text-decoration: none; color: inherit; border: 2px solid
+transparent; margin-left: 24px; color: #1b1c21; font-size: 16px; font-weight:
+normal; line-height: 24px; letter-spacing: -0.2px; } .slidemenu__link--main {
+color: #7e7e82; margin-left: 20px; } .slidemenu__link:hover { border: 2px solid
+#b8ffec; background-color: #ffffff; border-radius: 5px; } .slidemenu__bottom {
+display: flex; flex-direction: column; padding-left: 24px; margin-top: auto;
+width: 196px; height: 124px; } .slidemenu__bottom-buttons { display: flex; gap:
+16px; } .slidemenu__bottom-contats { display: flex; } .slidemenu__bottom-mail {
+display: flex; padding-top: 12px; } .slidemenu__bottom-contats__email { color:
+#1b1c21; text-decoration: none; font-weight: normal; line-height: 24px;
+letter-spacing: -0.2px; } .slidemenu__bottom-phone { padding-top: 12px; display:
+flex; } .slidemenu__bottom-contats__phone { color: #1b1c21; text-decoration:
+none; font-weight: bold; line-height: 24px; letter-spacing: -0.2px; }
+.slidemenu__bottom-languages { display: flex; padding-top: 40px; gap: 1em; }
+.slidemenu__bottom-languages--ru, .slidemenu__bottom-languages--en,
+.slidemenu__bottom-languages--ch { text-decoration: none; color: #1b1c21; }
+.lang--active { color: #7e7e85; } .round-icon:hover { opacity: 0.6; }
