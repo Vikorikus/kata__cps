@@ -46,10 +46,18 @@ html {
   font-display: swap;
 }
 
+html,
 body {
   font-family: "TT Lakes", sans-serif;
+  height: 100%;
+  max-height: 1024px;
+  overflow: auto;
 }
-
+.content {
+  min-height: 100%;
+  max-height: 1024px;
+  overflow: auto;
+}
 .header {
   background-color: #ffffff;
   display: flex;
@@ -116,6 +124,7 @@ body {
   left: 0;
   width: 320px;
   z-index: 1;
+  max-height: 1024px;
 }
 
 .slidemenu__options {
