@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "TT Lakes";
+  src: url(/fonts/TTLakes-Regular.woff) format("woff"),
+    url(/fonts/TTLakes-Regular.woff2) format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+.brands__list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1120px;
+  display: grid;
+  gap: 12px;
+}
+
+html {
+  background-color: #f8f8f8;
+}
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+.main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 100px;
+  background: linear-gradient(to left, red, blue);
+}
+
+.header {
+  background-color: #ffffff;
+  padding: 16px 16px;
+}
+.header__title {
+  font-size: 16px;
+  color: #7e7e82;
+}
+.brands__item {
+  width: 240px;
+  height: 72px;
+}
+
+.brands__button {
+  display: flex;
+  align-items: center;
+  padding: 20px 116px 20px 16px;
+  width: 100%;
+  font-size: 16px;
+  background: right 16px center no-repeat url(images/go.svg), white;
+  background-size: 32px;
+  border-radius: 5px;
+}
+.brands__logo {
+}
+/* до 768 пикселей */
+@media (max-width: 767px) {
+  .brands__list {
+    grid-template-columns: 1fr;
+    max-width: 320px;
+  }
+}
+
+/* от 768 пикселей */
+@media (min-width: 768px) and (max-width: 1119px) {
+  .brands__list {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 600px;
+  }
+  .header {
+    padding: 16px 24px;
+  }
+}
+
+/* от 1120 пикселей */
+@media (min-width: 1120px) {
+  .brands__list {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1120px;
+  }
+  .header {
+    padding: 16px 32px;
+  }
+}
+
+/* убрать hidden элементы */
+.brands__item.hidden {
+  display: none;
+}
+
+/* Кнопка показать всё */
+.brands__toggle {
+  display: none; /* показываем её через JS */
+  margin: 20px auto 0;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.brands__toggle.visible {
+  display: block;
+}
