@@ -3,76 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="block1.5.css" />
-    <title>Ремонтируемые бренды</title>
+    <title>CPS</title>
   </head>
+
   <body>
-    <header class="header">
-      <h1 class="header__title">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h1>
-    </header>
-    <main class="main">
-      <section class="brands">
-        <ul class="brands__list">
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="images/Lenovo.svg" alt="Lenovo" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="Samsung" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="Apple" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="ViewSonic" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="Bosch" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="HP" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item hidden">
-            <button class="brands__button">
-              <img src="" alt="Acer" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item hidden">
-            <button class="brands__button">
-              <img src="" alt="Sony" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item hidden">
-            <button class="brands__button">
-              <img src="" alt="Lenovo 2" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="Samsung2" class="brands__logo" />
-            </button>
-          </li>
-          <li class="brands__item">
-            <button class="brands__button">
-              <img src="" alt="Apple2" class="brands__logo" />
-            </button>
-          </li>
-        </ul>
-        <button class="brands__toggle" id="toggleButton">Показать все</button>
-      </section>
-    </main>
-    <script src="script.js"></script>
+    <div class="header">
+      <h2 class="header__title">Ремонт техники различных брендов</h2>
+    </div>
+
+    <div class="swiper brands">
+      <ul class="swiper-wrapper brands__list">
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Lenovo.png" alt="lenovo" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Samsung.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Apple.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/ViewSonic.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Bosch.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/HP.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Acer.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Sony.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Lenovo.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Samsung.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+
+        <li class="swiper-slide brands__item">
+          <button class="brands__btn">
+            <img src="images/Apple.png" alt="" class="brands__logo" />
+            <div class="brands__enter"></div>
+          </button>
+        </li>
+      </ul>
+
+      <div class="swiper-pagination"></div>
+
+      <div class="btn__container">
+        <button class="btn__action">Показать всё</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/block1.5.js"></script>
   </body>
 </html>

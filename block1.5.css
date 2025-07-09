@@ -1,125 +1,265 @@
-html {
-  box-sizing: border-box;
-}
-
-*,
-*:after,
-*:before {
-  box-sizing: inherit;
-  margin: 0;
-  padding: 0;
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes/TTLakes-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 
 @font-face {
   font-family: "TT Lakes";
-  src: url(/fonts/TTLakes-Regular.woff) format("woff"),
-    url(/fonts/TTLakes-Regular.woff2) format("woff2");
-  font-weight: 400;
+  src: url("../fonts/TTLakes/TTLakes-Medium.woff") format("woff");
+  font-weight: 500;
   font-style: normal;
-  font-display: swap;
 }
 
-.brands__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1120px;
-  display: grid;
-  gap: 12px;
+@font-face {
+  font-family: "TT Lakes";
+  src: url("../fonts/TTLakes/TTLakes-Bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
 }
 
-html {
-  background-color: #f8f8f8;
-}
-.main {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  overflow: hidden;
-}
-.main::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-  width: 100px;
-  background: linear-gradient(to left, red, blue);
+body {
+  font-family: "TT Lakes", sans-serif, serif;
+  background: #f8f8f8;
 }
 
 .header {
-  background-color: #ffffff;
-  padding: 16px 16px;
+  min-width: 320px;
+  border-top: 2px solid #d9fff5;
+  /* background: linear-gradient(to right, red 0%, blue 100%); */
+  background: linear-gradient(to right, #f8f8f8 0%, #ffffff 98.61%);
 }
+
 .header__title {
+  font-family: "TT Lakes";
   font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.2px;
+  text-transform: uppercase;
+  font-weight: normal;
   color: #7e7e82;
+  margin: 0;
+  padding: 16px 16px 16px 16px;
 }
-.brands__item {
+
+.brands,
+.swiper {
+  min-width: 320px;
+  min-height: 154px;
+}
+
+.brands__list {
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-bottom: 16px;
+  list-style-type: none;
+}
+
+.brands__btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
   width: 240px;
   height: 72px;
-}
-
-.brands__button {
-  display: flex;
-  align-items: center;
-  padding: 20px 116px 20px 16px;
-  width: 100%;
-  font-size: 16px;
-  background: right 16px center no-repeat url(images/go.svg), white;
-  background-size: 32px;
+  border: 1px solid #eaeaea;
   border-radius: 5px;
 }
-.brands__logo {
-}
-/* до 768 пикселей */
-@media (max-width: 767px) {
-  .brands__list {
-    grid-template-columns: 1fr;
-    max-width: 320px;
-  }
+
+.brands__btn:hover {
+  transform: scale(0.95);
+  box-shadow: 0px 0px 12px 0px rgba(34, 60, 80, 0.15);
 }
 
-/* от 768 пикселей */
-@media (min-width: 768px) and (max-width: 1119px) {
-  .brands__list {
-    grid-template-columns: repeat(3, 1fr);
-    max-width: 600px;
-  }
-  .header {
-    padding: 16px 24px;
-  }
+.brands__btn:active {
+  border: 1px solid #ff3e79;
+  background-position: 95% 50%;
+}
+/* точки свайпера  */
+.swiper-pagination-bullet {
+  opacity: 1;
+  background-color: #dddddd;
+  width: 12px;
+  height: 12px;
 }
 
-/* от 1120 пикселей */
-@media (min-width: 1120px) {
-  .brands__list {
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1120px;
-  }
-  .header {
-    padding: 16px 32px;
-  }
+.swiper-pagination-bullet-active {
+  background-color: #b5b6bc;
+  transform: scale(1.4);
 }
 
-/* убрать hidden элементы */
-.brands__item.hidden {
+/* сами логотипы прямоугольники */
+
+.brands__enter {
+  background: url("images/go.svg");
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+.btn__container {
   display: none;
 }
-
-/* Кнопка показать всё */
-.brands__toggle {
-  display: none; /* показываем её через JS */
-  margin: 20px auto 0;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  background: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
+/* дял скрытых штук */
+.hidden {
+  display: none;
+  opacity: 0;
 }
+/* до 1140 */
+@media (min-width: 769px) and (max-width: 1139px) {
+  .header {
+    display: flex;
+    padding-top: 2px;
+    min-width: 769px;
+    height: 56px;
+    border-top: 2px solid #d9fff5;
+    margin: 0 auto;
+    background: #f8f8f8;
+  }
 
-.brands__toggle.visible {
-  display: block;
+  .header__title {
+    display: inline-block;
+    align-items: center;
+    min-height: 80px;
+    padding-top: 16px;
+    padding-left: 24px;
+    font-size: 16px;
+    color: #7e7e82;
+    text-transform: uppercase;
+  }
+
+  .brands,
+  .swiper {
+    min-width: 768px;
+    min-height: 200px;
+  }
+
+  .brands__list {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .btn__container {
+    display: block;
+    max-width: 1139px;
+  }
+
+  .btn__action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 56px;
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .btn__action::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    margin: 0 16px 0 34px;
+    background: url("/images/expanddown.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.3s;
+  }
+
+  .btn__action--rotate::before {
+    transform: rotate(180deg);
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
+}
+/* 1140 и больше */
+@media (min-width: 1139px) {
+  .header {
+    padding-top: 2px;
+    max-width: 1139px;
+    height: 56px;
+    border-top: 2px solid #d9fff5;
+    margin: 0 auto;
+    background: #f8f8f8;
+  }
+
+  .header__title {
+    display: inline-block;
+    vertical-align: middle;
+    min-height: 80px;
+    padding-top: 16px;
+    padding-left: 24px;
+    font-size: 16px;
+    color: #7e7e82;
+    text-transform: uppercase;
+  }
+
+  .brands,
+  .swiper {
+    min-width: 1139px;
+    min-height: 200px;
+  }
+
+  .brands__list {
+    max-width: 1139px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+  }
+
+  .btn__container {
+    display: block;
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .btn__action {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 200px;
+    height: 56px;
+    color: #1b1c21;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  .btn__action::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    padding: 0 16px 0 34px;
+    background: url(/images/expanddown.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transition: 0.3s;
+  }
+
+  .btn__action--rotate::before {
+    transform: rotate(180deg);
+  }
+
+  .swiper-pagination-bullet {
+    display: none;
+  }
 }
