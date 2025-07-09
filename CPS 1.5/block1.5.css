@@ -22,6 +22,8 @@
 body {
   font-family: "TT Lakes", sans-serif, serif;
   background: #f8f8f8;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -116,7 +118,6 @@ body {
 @media (min-width: 769px) and (max-width: 1139px) {
   .header {
     display: flex;
-    padding-top: 2px;
     min-width: 769px;
     height: 56px;
     border-top: 2px solid #d9fff5;
@@ -256,6 +257,8 @@ body {
     color: #1b1c21;
     font-size: 16px;
     font-weight: 500;
+    background: transparent;
+    border: none;
   }
 
   .btn__action::before {
