@@ -14,7 +14,6 @@ function onSwiper() {
   } else {
     if (swiper) {
       swiper.destroy(true, true);
-      swiper = null;
     }
   }
 }
