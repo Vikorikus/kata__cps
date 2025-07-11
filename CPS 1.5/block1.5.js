@@ -1,26 +1,37 @@
 var swiper = null;
-
 function onSwiper() {
   if (window.innerWidth <= 768) {
     if (!swiper) {
-      const totalW = window.innerWidth;
-      const buttonW = 272;
-      const gap = 16;
-      const k = (totalW + gap) / (buttonW + gap);
-
       swiper = new Swiper(".brands", {
-        slidesPerView: k,
-        spaceBetween: gap,
+        slidesPerView: "1.3",
+        spaceBetween: "0",
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
+        },
+
+        breakpoints: {
+          400: {
+            slidesPerView: "1.6",
+          },
+          500: {
+            slidesPerView: "1.8",
+          },
+          600: {
+            slidesPerView: "2.2",
+          },
+          700: {
+            slidesPerView: "2.5",
+          },
+          767: {
+            slidesPerView: "2.8",
+          },
         },
       });
     }
   } else {
     if (swiper) {
       swiper.destroy(true, true);
-      swiper = null;
     }
   }
 }
