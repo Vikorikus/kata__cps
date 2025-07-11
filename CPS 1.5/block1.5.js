@@ -9,6 +9,24 @@ function onSwiper() {
           el: ".swiper-pagination",
           clickable: true,
         },
+
+        breakpoints: {
+          400: {
+            slidesPerView: "1.6",
+          },
+          500: {
+            slidesPerView: "1.8",
+          },
+          600: {
+            slidesPerView: "2.2",
+          },
+          700: {
+            slidesPerView: "2.5",
+          },
+          767: {
+            slidesPerView: "2.8",
+          },
+        },
       });
     }
   } else {

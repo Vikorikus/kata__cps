@@ -67,6 +67,7 @@ body {
   height: 72px;
   border: 1px solid #eaeaea;
   border-radius: 5px;
+  background-color: #ffffff;
 }
 
 .brands__btn:hover {
