@@ -69,14 +69,14 @@ btn.addEventListener("click", function () {
   if (isExpand) {
     showCards();
     btn.textContent = "Показать всё";
-    btn.classList.remove("btn__action--rotate");
+    btn.classList.toggle("btn__action--rotate");
     isExpand = false;
   } else {
     for (var i = 0; i < brandsItem.length; i++) {
       brandsItem[i].classList.remove("hidden");
     }
     btn.textContent = "Скрыть";
-    btn.classList.add("btn__action--rotate");
+    btn.classList.toggle("btn__action--rotate");
     isExpand = true;
   }
 });
